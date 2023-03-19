@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-lg px-3 my-5 markdown-body">
+
+    <h1><a href="https://nduchin.github.io/rsschool-cv/">rsschool-cv</a></h1>
+
+
+    <h1 id="nikita-dukhin">Nikita Dukhin</h1>
+
+    <h2 id="about">About</h2>
+
+    <p>Hi! I’m Nikita, student of Front-End/JavaScript development at Rolling-Scopes School. I worked in higher
+      education institution and have expirience of teaching, organization work, project control, business
+      correspondence, team work. After Envenronment design graduation i made a decision to learn something else, and
+      start learning JavaScript.</p>
+
+    <h2 id="contacts">Contacts</h2>
+
+    <ul>
+      <li>nduchin@mail.ru</li>
+      <li>https://t.me/nduchin</li>
+      <li>https://github.com/nduchin</li>
+      <li>https://discordapp.com/users/nduchin</li>
+      <li>https://www.codewars.com/users/nduchin</li>
+    </ul>
+
+    <h2 id="skills">Skills</h2>
+    <h3 id="hardskills">Hardskills</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">Skill</th>
+          <th style="text-align: right">Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left">JavaScript</td>
+          <td style="text-align: right">85</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Html5</td>
+          <td style="text-align: right">70</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Css3</td>
+          <td style="text-align: right">75</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Corel</td>
+          <td style="text-align: right">100</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Figma</td>
+          <td style="text-align: right">60</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Adobe</td>
+          <td style="text-align: right">95</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Git</td>
+          <td style="text-align: right">75</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Svg</td>
+          <td style="text-align: right">80</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="languages">Languages</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left">Languages</th>
+          <th style="text-align: right">Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left">Russian</td>
+          <td style="text-align: right">Native</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">English</td>
+          <td style="text-align: right">Fluent</td>
+        </tr>
+        <tr>
+          <td style="text-align: left">Serbian</td>
+          <td style="text-align: right">Beginning</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="education">Education</h2>
+
+    <h3 id="non-profit-organization-of-high-education-moskow-art-industrial-institute">Non-profit organization of high
+      education «Moskow Art-Industrial Institute»</h3>
+    <p>Degree: Bachelor of environment design
+      2018-2021</p>
+
+    <h2 id="courses">Courses</h2>
+    <h3 id="rsschool-javascriptfront-end-stage0pre-school">RSSchool JavaScript/Front-End Stage#0(Pre-school)</h3>
+    <p>Elementary class of JS/FE
+      2022 - 2023</p>
+
+    <h3 id="rsschool-javascriptfront-end-stage1">RSSchool JavaScript/Front-End Stage#1</h3>
+    <p>Main JS/FE class
+      2023 - Curent</p>
+
+    <h2 id="employment">Employment</h2>
+    <h3 id="non-profit-organization-of-high-education-moskow-art-industrial-institute-1">Non-profit organization of high
+      education «Moskow Art-Industrial Institute»</h3>
+    <p>College lecturer: Lecturer of computer technology in design.
+      2018 - 2022</p>
+
+    <h2 id="code">Code</h2>
+    <h3 id="codewars-task-is-a-number-prime">Codewars task Is a number prime?</h3>
+    <p><code></code></p>
+    <pre>function isPrime(num){
+if (num&lt;=0||num==1||num%1!=0){return false}
+for (let i=2;i&lt;=Math.sqrt(num);){
+  if (num%i==0) return false;
+  i==2 ? i+=1 : i+=2
+};
+return true;
+};</pre>
+    <p>&lt;/code&gt;</p>
+
+    <h3 id="codewars-task-gap-in-primes">Codewars task Gap in primes</h3>
+    <p><code></code></p>
+    <pre>function gap(g, m, n) {
+function isPrime(n){
+  if (n%1!=0){return false}
+  for (let i=2;i&lt;Math.sqrt(n)+1;){
+    if (n%i==0) return false;
+    i==2 ? i+=1 : i+=2
+  };
+  return true;
+};
+function nextPrime(n){
+  let i=n+1;
+  while(!isPrime(i)){i++}
+  return i
+}
+let pr = [nextPrime(m-1),nextPrime(nextPrime(m-1))]
+for(;pr[1]&lt;=n;pr[0]=pr[1]){
+  pr[1]=nextPrime(pr[0])
+  if (pr[1]-pr[0]==g){return [pr[0],pr[1]]}
+}
+return null
+};</pre>
+    <p>&lt;/code&gt;</p>
+
+    <h2 id="projects">Projects</h2>
+    <p><em>work in progress</em></p>
+
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script>anchors.add();</script>
+</body>
+</body>
+
+</html>
